@@ -1,0 +1,19 @@
+.container {
+  padding: 1px;
+}
+
+#div-top-bar {
+  height: 10%;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+#div-left-menu {
+  background-color: darkcyan;
+  border: 1px solid;
+}
+
+#div-logout-bar {
+  background-color: coral;
+  border: 1px solid;
+}

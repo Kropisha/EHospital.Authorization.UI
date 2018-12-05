@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col" id="div-top-bar">
+      <app-top-bar>
+
+      </app-top-bar>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-1" id="div-left-menu">
+{{user.firstName}} {{user.lastName}}
+    </div>
+    <div class="col-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col" id="div-patient-table">
+                <app-patients [patientsData]="patientsData" (editClicked)="editClicked($event)"></app-patients>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="div-patient-recent-table">
+                <app-patients-recent></app-patients-recent>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7" id="div-patient-details-form">
+            <app-patient-details [patient]="currentPatientDetails"></app-patient-details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1" id="div-logout-bar">
+        <div class="row"></div>
+        <div class="col-md-1 text-left">
+        <button class="btn btn-primary" (click)="logout();">Log out</button>
+        </div>
+        </div>
+    </div>
+  </div>

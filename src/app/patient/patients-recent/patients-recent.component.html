@@ -1,0 +1,18 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>SURNAME</th>
+      <th>MANAGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patient of patientsData">
+      <td>{{ patient.id  }}</td>
+      <td>{{ patient.firstName  }}</td>
+      <td>{{ patient.lastName  }}</td>
+      <td><a href="#" (click)="editRecord(patient)">Edit</a></td>      
+    </tr>
+  </tbody>
+</table>
